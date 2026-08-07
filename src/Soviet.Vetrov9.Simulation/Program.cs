@@ -1,1 +1,1 @@
-﻿Console.WriteLine("Hello, World! From simulation");
+Console.WriteLine("Hello, World! From simulation");

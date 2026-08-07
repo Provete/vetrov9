@@ -1,4 +1,4 @@
-﻿using Xunit;
+using Xunit;
 
 namespace Soviet.Vetrov9.Core.Tests;
 
