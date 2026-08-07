@@ -1,0 +1,49 @@
+﻿services:
+  soviet.vetrov9.core:
+    image: soviet.vetrov9.core
+    build:
+      context: .
+      dockerfile: src/Soviet.Vetrov9.Core/Dockerfile
+
+  soviet.vetrov9.core.tests:
+    image: soviet.vetrov9.core.tests
+    build:
+      context: .
+      dockerfile: tests/Soviet.Vetrov9.Core.Tests/Dockerfile
+
+  soviet.vetrov9.simulation:
+    image: soviet.vetrov9.simulation
+    build:
+      context: .
+      dockerfile: src/Soviet.Vetrov9.Simulation/Dockerfile
+
+  soviet.vetrov9.console:
+    image: soviet.vetrov9.console
+    build:
+      context: .
+      dockerfile: src/Soviet.Vetrov9.Console/Dockerfile
+
+  soviet.vetrov9.simulation.tests:
+    image: soviet.vetrov9.simulation.tests
+    build:
+      context: .
+      dockerfile: tests/Soviet.Vetrov9.Simulation.Tests/Dockerfile
+
+  soviet.vetrov9.core-1:
+    image: soviet.vetrov9.core-1
+    build:
+      context: .
+      dockerfile: src/Soviet.Vetrov9.Core/Dockerfile
+
+  soviet.vetrov9.core.tests-1:
+    image: soviet.vetrov9.core.tests-1
+    build:
+      context: .
+      dockerfile: tests/Soviet.Vetrov9.Core.Tests/Dockerfile
+
+  soviet.vetrov9.core.tests-2:
+    image: soviet.vetrov9.core.tests-2
+    build:
+      context: .
+      dockerfile: tests/Soviet.Vetrov9.Core.Tests/Dockerfile
+

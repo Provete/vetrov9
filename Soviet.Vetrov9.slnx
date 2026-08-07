@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".dockerignore" />
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="compose.yaml" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="nuget.config" />
+    <File Path="Soviet.Vetrov9.slnx" />
+    <File Path="vetrov-9 cenario.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Soviet.Vetrov9.Console/Soviet.Vetrov9.Console.csproj" />
+    <Project Path="src/Soviet.Vetrov9.Simulation/Soviet.Vetrov9.Simulation.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Soviet.Vetrov9.Simulation.Tests/Soviet.Vetrov9.Simulation.Tests.csproj" />
+  </Folder>
+  <Project Path="src/Soviet.Vetrov9.Core/Soviet.Vetrov9.Core.fsproj" />
+  <Project Path="tests/Soviet.Vetrov9.Core.Tests/Soviet.Vetrov9.Core.Tests.csproj" />
+</Solution>
