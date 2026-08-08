@@ -2,6 +2,6 @@ namespace Soviet.Vetrov9.Simulation;
 
 public interface ISimClock
 {
-    public DateTime now { get; }
+    public DateTime Now { get; }
     public void AdvanceTo(DateTime t);
 }
