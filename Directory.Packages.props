@@ -6,4 +6,8 @@
         <PackageVersion Include="NSubstitute" Version="6.0.0" />
         <PackageVersion Include="Shouldly" Version="4.3.0" />
     </ItemGroup>
+
+    <ItemGroup>
+        <PackageVersion Include="FSharp.Core" Version="10.1.302"/>
+    </ItemGroup>
 </Project>

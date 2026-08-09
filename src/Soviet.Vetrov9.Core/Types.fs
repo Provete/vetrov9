@@ -9,29 +9,42 @@ type MagnetometerNode = Mag1 | Mag2
 type ThermistorNode = Bh1 | Bh2
 type Axis = Z | N | E
 
+type PhysicalNode =
+    | Domo
+    | OnSeismicNode of SeismicNode
+    | OnMagnetometerNode of MagnetometerNode
+    | OnThermistorNode of ThermistorNode
+
+
 type SensorReading =
-    | Seismic of node: SeismicNode
+    | Seismic of
+        node: SeismicNode
         * axis: Axis
         * speedNmPerS: float // Speed in nanometers per second
         * t: DateTime
-    | Infrasound of node: RingANode
+    | Infrasound of
+        node: RingANode
         * pressureMPa: float
         * t: DateTime
-    | Magnetic of node: MagnetometerNode
+    | Magnetic of
+        node: MagnetometerNode
         * axis: Axis
-        * fieldStrengthNt: float // Nano teslas
+        * fieldDeltaNt: float // Variação em Nano teslas
         * t: DateTime
-    | Thermal of node: ThermistorNode
+    | Thermal of
+        node: ThermistorNode
         * depthM: float
         * tempC: float
         * t: DateTime
     | Hydrophone of PressureUPa: float * t: DateTime
-    | Wind of SpeedMPerS: float
+    | Wind of
+        SpeedMPerS: float
         * DirectionDeg: float
         * t: DateTime
     | AirTemp of tempC: float * t:DateTime
     | Pressure of hPa: float * t:DateTime
-    | Generator of generatorRPM: float
+    | Generator of
+        generatorRPM: float
         * powerKw: float
         * vibrationMmPerS: float
         * t: DateTime

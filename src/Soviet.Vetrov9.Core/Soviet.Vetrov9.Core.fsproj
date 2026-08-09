@@ -7,14 +7,19 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Program.fs"/>
+        <Compile Include="Types.fs" />
+        <Compile Include="Topology.fs" />
+        <Compile Include="Calibration.fs" />
+        <Compile Include="Protocol.fs" />
     </ItemGroup>
-
+    
     <ItemGroup>
-      <Content Include="..\..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
-      <Content Include="Dockerfile" />
+        <Content Include="..\..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
+        <Content Include="Dockerfile" />
+        
+        <PackageReference Include="FSharp.Core" />
     </ItemGroup>
 
 </Project>
